@@ -9,7 +9,19 @@
 // Reference Codecademy lessons: Introduction- Arithmetic Opertaors, Conditional Statements lessons 3, 4, 5,and 9
 
 //Write your code for GenBuzz below this line:
-
+let myNumber;
+if (isNaN(myNumber)) {
+    console.log('This is a number');
+} else if (myNumber = 3) {
+    console.log('Gen');
+} else if (myNumber = 5) {
+    console.log('Buzz');
+} else if (myNumber = 3 * 5) {
+    console.log('GenBuzz');
+}
+else {
+    console.log('This is not a number');
+}
 
 
 
@@ -28,7 +40,22 @@
 // If the variable input is not an item in the store, then print 'Invalid Item' to the console.
 
 //Write your code for the E-Commerce item list below this line:
-
+let storeList = 'shoes';
+switch (storeList) {
+    case 'Shoes' :
+        console.log('Shoes is - $50');
+        break;
+    case 'Jeans' : 
+        console.log('Jeans is - $25');
+        break;
+    case 'Hat' :
+        console.log('Hat is - $12');
+    case 'Socks' :
+        console.log('Socks is - $2');
+        break;
+    default:
+        console.log('Invalid Item');
+}
 
 
 
@@ -37,5 +64,11 @@
 
 //Write your code below this line:
 
+function getRandomInt(min, max) {
+   // return Math.floor(Math.random()* 100) + 50 + '%';    
+   return Math.random() * (max - min) + min;
+}
+let random_num = getRandomInt(50, 100);
+console.log(random_num);
 
 
